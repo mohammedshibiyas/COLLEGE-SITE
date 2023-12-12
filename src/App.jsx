@@ -17,6 +17,9 @@ import Staffdetails from './Components/Body/Staffdetails/Staffdetails'
 import StaffForgotusername from './Components/staffForgoteusername/StaffForgotusername'
 import StaffForgotPwd from './Components/StaffForgotPwd/StaffForgotPwd'
 import ViewFullStudents from './Components/Body/studentsview/Studentsview'
+import StudentDetails from './Components/Body/studentfulldetails/Studentdetails'
+import StudentEdit from './Components/Body/Editstudent/Editsttudent'
+// import { EditStudentDetails } from '../controller'
 
 
 
@@ -42,6 +45,9 @@ function App() {
       <Route path='/staffedit/:id' Component={Staffedit}/>
       <Route path='/staffforgotpwd' Component={StaffForgotPwd}/>
       <Route path='/studentsview' Component={ViewFullStudents}/>
+      <Route path='/studentdetails/:id' Component={StudentDetails}/>
+      <Route path='/studentEdit/:id' Component={StudentEdit}/>
+      
     </Routes>
     
     </BrowserRouter>

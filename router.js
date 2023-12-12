@@ -14,6 +14,8 @@ router.route("/forgotepwd/:phone").patch(controller.staffFrgtPwd);
 router.route("/addstudent").post(controller.addStudent);
 router.route("/getstudent").get(controller.getStudents);
 router.route("/deletestudent/:id").delete(controller.deleteStudent);
+router.route("/getstudentdetails/:id").post(controller.getStudentDetails);
+router.route("/editstudentdetails/:id").patch(controller.EditStudentDetails);
 
 
 
