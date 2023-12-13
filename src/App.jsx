@@ -19,7 +19,9 @@ import StaffForgotPwd from './Components/StaffForgotPwd/StaffForgotPwd'
 import ViewFullStudents from './Components/Body/studentsview/Studentsview'
 import StudentDetails from './Components/Body/studentfulldetails/Studentdetails'
 import StudentEdit from './Components/Body/Editstudent/Editsttudent'
-// import { EditStudentDetails } from '../controller'
+import Index from './Components/Body/index'
+import StudentHome from './Components/Body/studenthome/Studenthome'
+
 
 
 
@@ -27,7 +29,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    <Navbar/>
+    {/* <Navbar/> */}
     <Routes>
       <Route path='/' Component={Home}/>
       <Route path='/adminlogin' Component={AdminLogin}/>
@@ -47,6 +49,9 @@ function App() {
       <Route path='/studentsview' Component={ViewFullStudents}/>
       <Route path='/studentdetails/:id' Component={StudentDetails}/>
       <Route path='/studentEdit/:id' Component={StudentEdit}/>
+      <Route path='/index' Component={Index}/>
+      <Route path='/studenthome' Component={StudentHome}/>
+      
       
     </Routes>
     

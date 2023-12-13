@@ -205,3 +205,32 @@ export async function EditStudentDetails(req, res) {
         res.status(404).send(error);
     }
 }
+
+export async function StudentLogin(req, res) {
+    try {
+    
+        const { studentid, dob } = req.body;
+        const user = await student_schema.findOne({ studentid });
+        //  console.log(user._id);
+          if (!user) {
+          return res.status(404).send("User not found");
+        }
+          if (dob !== user.dob) {
+          return res.status(401).send("Incorrect date of birth");
+        }
+        const{_id}=user
+          const token = sign({ _id }, process.env.JWT_KEY, { expiresIn: "30m" });
+        //   console.log(token);
+          res.status(200).send({ msg: "Successfully logged in", token });
+          } catch (error) {
+        console.error(error);
+        res.status(500).send("Internal Server Error");
+      }
+  }
+
+  export async function GetDtsilsLoginedStudent(req,res){
+
+    let task=await student_schema.findOne({_id:req.user._id})
+    console.log(task);
+    res.status(200).send({task})
+}

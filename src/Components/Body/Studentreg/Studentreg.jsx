@@ -129,13 +129,13 @@ const Studentreg = () => {
               <input type="text" placeholder='Student ID' name='studentid' onChange={Getdata} />
               <input type="text" placeholder='Full Name' name='name' onChange={Getdata}/>
             </div>
-            <div>
+            {/* <div>
               <input type="text" placeholder='Username' name='username' onChange={Getdata} />
               <input type="password" placeholder='Password' name='password' onChange={Getdata} />
-            </div>
+            </div> */}
             <div>
               <input type="text" placeholder='E mail' name='email' onChange={Getdata} />
-              <input type="password" placeholder='Phone' name='phone' onChange={Getdata} />
+              <input type="text" placeholder='Phone' name='phone' onChange={Getdata} />
             </div>
             <div><input type="text" placeholder='Address' className='address' name='address' onChange={Getdata} /></div>
             <div><input type="date" placeholder='Date Of Birth' name='dob' onChange={Getdata} />
