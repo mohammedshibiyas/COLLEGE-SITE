@@ -31,7 +31,7 @@ function App() {
     <BrowserRouter>
     {/* <Navbar/> */}
     <Routes>
-      <Route path='/' Component={Home}/>
+      <Route path='/home' Component={Home}/>
       <Route path='/adminlogin' Component={AdminLogin}/>
       <Route path='/stafflogin' Component={StaffLogin}/>
       <Route path='/staffreg' Component={StaffReg}/>
@@ -49,7 +49,7 @@ function App() {
       <Route path='/studentsview' Component={ViewFullStudents}/>
       <Route path='/studentdetails/:id' Component={StudentDetails}/>
       <Route path='/studentEdit/:id' Component={StudentEdit}/>
-      <Route path='/index' Component={Index}/>
+      <Route path='/' Component={Index}/>
       <Route path='/studenthome' Component={StudentHome}/>
       
       

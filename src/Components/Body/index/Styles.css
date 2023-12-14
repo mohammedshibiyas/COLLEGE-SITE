@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body{
+    font-family: "poppins", sans-serif;
+}
+
+.main-nav{
+    background-color:#f9ece6;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+.all-items{
+    display: flex;
+    justify-content: center;
+}
+.all-items a{
+    text-decoration: none;
+    color: black;
+    
+    font-family:"poppins", sans-serif ;
+}
+.all-items a span{
+    border: 1px solid white;
+    padding: 5px 10px;
+    
+    background-color: white;
+    border-radius: 5px;
+}
+.login{
+   margin-left: 30px;
+
+}
+.login a{
+  margin-left: 8px;  
+}
+.bag{
+    margin-left: 20px;
+}
+.bag i{
+    margin-left: 20px;
+}
+.banner{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(/public/pic1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* banner */
+.banner img{
+    width: 100%;
+    position: relative;
+    filter: brightness(.5);
+    
+    height: 120vh;
+}
+.banner h2{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+color: white    ;
+    bottom: 60%;
+}
+
+.banner p{
+    position: absolute;
+    bottom: 40%;
+    transform: translate(-50%,-50%);    
+    text-align: center;
+    width: 70%;
+    left: 50%;
+    color: white ;
+}
+.banner button{
+    position: absolute;
+    bottom: 30%;
+    transform: translate(-50%,-50%);   
+    left: 50%;
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    background-color: rgb(96, 184, 96);
+ 
+
+}
+.banner button:hover{
+    border: 2px solid white;
+    background-color: transparent;
+    transition: .3s;
+}
+#about{
+    position: absolute;
+    bottom: 30%;
+    transform: translate(-50%,-50%);   
+    left: 90%;
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    background-color: rgb(96, 184, 96);
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* about */
+
+
+
+.about_section {
+    width: 100%;
+    float: left;
+}
+.margin_top0{
+    margin-top: 0px;
+}
+
+.about_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #252525;
+    font-weight: 600;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.about_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #252525;
+    margin: 0px;
+    padding-top: 55px;
+}
+
+.read_bt {
+    width: 170px;
+    float: left;
+    padding-top: 55px;
+}
+
+.read_bt a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    background-color: rgb(96, 184, 96);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.read_bt a:hover {
+    color: #fafafa;
+    background-color: #252525;
+}
+
+.about_img {
+    width: 100%;
+    float: right;
+}
+
+.about_img img{
+    margin-left: 10%;
+    height: 300px;
+    border-radius: 3%;
+}
+.about_section{
+    padding-bottom: 5%;
+}
+
+
+/* courses */
+
+.offerd-heading{
+    text-align: center;
+    color: black;
+    padding: 2%;
+  }
+  .offerd-heading h1{
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  .list{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    /* background-color: yellow; */
+  }
+  .list p{
+    width: 300px;
+    text-align: center;
+    background-color: transparent;
+    margin-right: 10px;
+    padding: 20px 0px 20px 0px;
+    border-radius: 5px;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 800;
+    border: 1px solid rgb(96, 184, 96);
+  }
+  .list p:hover{
+    background-color: rgb(96, 184, 96);
+    transition: .3s;
+    color: white;
+  }
+
+
+  .courses-main{
+    /* background: url("/public/course.jpg"); */
+    /* height: 300px; */
+  }
+
+  .blog_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 10%;
+}
+
+.blog_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #252525;
+    text-align: center;
+    font-weight: 500;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.blog_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #252525;
+    text-align: center;
+    margin: 0px;
+}
+
+.blog_section_2 {
+    width: 100%;
+    float: left;
+}
+
+.blog_taital_1 {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #252525;
+    font-weight: 600;
+}
+
+.ipsum_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #252525;
+    padding-top: 44px;
+    margin: 0px;
+}
+
+.readmore_bt {
+    width: 170px;
+    float: left;
+    padding-top: 55px;
+}
+
+.readmore_bt a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    background-color: rgb(96, 184, 96);
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.readmore_bt a:hover {
+    color: #fafafa;
+    background-color: #252525;
+}
+
+.blog_img {
+    width: 100%;
+    float: left;
+}
+.blog_img img{
+    width: 90%;
+}
+
+/* contact */
+
+
+.contact_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 90px;
+}
+
+.contact_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #252525;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;    
+}
+
+.contact_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 55px;
+}
+
+.padding_left_0 {
+    padding-left: 0px;
+}
+
+.mail_section_1 {
+    width: 84%;
+    float: left;
+    padding-top: 40px;
+}
+
+.mail_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #4f4e4e;
+    border: 1px solid #8e8e8e;
+    background-color: #ffff;
+    padding: 8px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.massage-bt {
+    color: #4f4e4e;
+    width: 100%;
+    height: 110px;
+    font-size: 18px;
+    background-color: #ffff;
+    padding: 40px 15px 0px 15px;
+    border: 1px solid #8e8e8e;
+    height: 110px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.send_bt {
+    width: 170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.send_bt a {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgb(96, 184, 96);
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.send_bt a:hover {
+    color: #ffffff;
+    background-color: #252525;
+}
+
+.map_main {
+    width: 100%;
+    float: left;
+}
+
+
+/* footer */
+
+
+.footer_section {
+    width: 100%;
+    float: left;
+    background-color: #262626;
+    height: auto;
+    padding: 95px 0px;
+}
+
+.useful_text {
+    width: 100%;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer_text {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color: #cbc9c9;
+    margin: 0px;
+}
+
+.footer_menu {
+    width: 100%;
+    float: left;
+}
+
+.footer_menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer_menu li {
+    font-size: 14px;
+    color: #cbc9c9;
+}
+
+.footer_menu li a {
+    color: #cbc9c9;
+}
+
+.footer_menu li a:hover {
+    color: #ffffff;
+}
+
+.dummy_text {
+    width: 30%;
+    float: left;
+    font-size: 14px;
+    color: #cbc9c9;
+    margin: 0px;
+}
+
+.location_text {
+    width: 100%;
+    float: left;
+}
+
+.location_text ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.location_text li {
+    font-size: 14px;
+    color: #cbc9c9;
+    padding: 0px 0px 5px 0px;
+}
+
+.location_text li a {
+    color: #cbc9c9;
+}
+
+.location_text li a:hover {
+    color: #ffffff;
+}
+
+.padding_left_10 {
+    padding-left: 10px;
+}
+

@@ -66,7 +66,7 @@ const Studenthome = () => {
             <table>
                <tr>
                     <th className='stud-details-th'>Added By</th>
-                    <td className='stud-details-td'>: {student.staff}</td>
+                    <td className='stud-details-td'>: {student. staff}</td>
                </tr>
                <tr>
                     <th className='stud-details-th'>Date of birth</th>
@@ -98,7 +98,7 @@ const Studenthome = () => {
                </tr>
                <tr>
                     <th className='stud-details-th'>Attendance</th>
-                    <td className='stud-details-td'>:{student.attendance} </td>
+                    <td className='stud-details-td'>:{student.attandance} </td>
                </tr>
                <tr>
                     <th className='stud-details-th'>Internal Marks</th>
