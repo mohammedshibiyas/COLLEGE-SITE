@@ -145,6 +145,7 @@ export async function forgotUsername(req,res){
 }
 
 export async function staffFrgtPwd(req, res) {
+    // console.log(req);
     const phone = req.params;
     try {
         const updatedData = req.body;
